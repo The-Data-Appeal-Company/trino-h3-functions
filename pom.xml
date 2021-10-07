@@ -11,7 +11,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>trino-functions</artifactId>
+    <artifactId>trino-h3-functions</artifactId>
     <version>363</version>
     <description>Trino - H3 Functions</description>
     <packaging>trino-plugin</packaging>
@@ -30,6 +30,12 @@
         <dependency>
             <groupId>io.trino</groupId>
             <artifactId>trino-spi</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.airlift</groupId>
+            <artifactId>slice</artifactId>
+            <version>0.40</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
